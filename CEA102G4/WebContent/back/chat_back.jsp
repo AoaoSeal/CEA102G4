@@ -13,7 +13,7 @@
 	    height: 500px;
 	    overflow-y: scroll;
 	}
-	
+	 
 	#sidecontent{
 		flex-direction:column-reverse;
 		display:flex;
