@@ -1,0 +1,16 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+	.container{
+		width: 100%;
+	}
+	.carousel .item {
+		height: 400px;
+		width: 100%;
+	}
+	.carousel-inner > .item > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		height: 400px;
+	}

@@ -1,0 +1,49 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<header>
+	<div>
+		<a
+			href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=home&openindex=home"
+			class="logo"> <img class="logoimg"
+			src="${pageContext.request.contextPath}/resource/images/logo.png"
+			alt=""></a>
+	</div>
+	<div class="menuToggle" onclick="menuToggle();"></div>
+	<ul class="navigation">
+		<li><a
+			href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=home&openindex=home">首頁</a></li>
+		<li><a href="#banner">行程</a></li>
+		<li><a
+			href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=getOne_For_bid_index&openindex=bid_index">競標</a></li>
+		<li><a href="#banner">商城</a></li>
+		<li><a href="#banner">社群</a></li>
+		<li><a
+			href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=getOne_For_bid_index&openindex=bid_index">ajax追蹤測試</a></li>
+	</ul>
+	<c:if test="${memberVO.memId==null}">
+		<ul class="navigationright">
+			<li><a
+				href="${pageContext.request.contextPath}/member/mem.do?action=login_page&openindex=${openindex}">登入
+					/ 註冊</a></li>
+	</c:if>
+	<c:if test="${openmember!=null ||openmember== false}">
+		<ul class="navigationright">
+			<li><a href="#"><img class="imgmessage"
+					src="${pageContext.request.contextPath}/resource/images/message1.png"
+					alt=""></a></li>
+			<li><a href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=getOne_For_allfollow" display="none"><img class="imgh"
+					src="${pageContext.request.contextPath}/resource/images/heart.png"
+					alt=""></a></li>
+			<li><a href="#">
+					<p class="bal">
+						錢包餘額<br> <span>${memberVO.traBal}</span>
+					</p>
+			</a></li>
+			<li><a
+				href="${pageContext.request.contextPath}/member/mem.do?memId=${memberVO.memId}&action=getOne_For_Update">
+					<img class="imgm"
+					src="${pageContext.request.contextPath}/${memberVO.allPic}" alt="">
+					<input type="hidden" class="memberidsave" id="${memberVO.memId}">
+			</a></li>
+		</ul>
+	</c:if>
+</header>

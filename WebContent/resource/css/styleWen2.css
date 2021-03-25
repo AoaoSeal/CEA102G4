@@ -1,0 +1,535 @@
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap')
+	;
+	
+
+
+.menu .artbox .box .imgBx {
+	margin: 10px;
+	position: relative;
+	margin-top: -29px;
+	width: 230px;
+	overflow: hidden;
+	height: 230px;
+}
+
+.menu .artbox .box .text {
+	position: relative;
+	padding: 0px 0 0px;
+	width: 100px;
+	margin-left: 230px;
+}
+
+.menu .artbox .box .text h3 {
+	margin-left: 20px;
+	font-weight: 400;
+	color: #111;
+}
+
+.menu .artbox .box .text h4 {
+	margin-left: 20px;
+	font-weight: 400;
+	color: #444;
+}
+
+.menu .artbox .box .but {
+	margin-top: 6%;
+}
+
+.menu .artbox .box .but button {
+	background-color: #3394fb;
+	border: none;
+	color: white;
+	width: 100%;
+	padding: 8px 88px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.heart button, .memimgBx button {
+	/* background-color: #fff; */
+	border: 0px;
+}
+
+.menu .artbox .box .memimgBx {
+	padding: 10px;
+	float: right;
+}
+
+.menu .artbox .box .memimgBx .imgm {
+	width: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #ddd;
+}
+
+.menu .artbox .box .memimgBx .heart {
+	text-align: center;
+	/* margin-bottom: 0px; */
+}
+
+.menu .artbox .box .memimgBx .heart p {
+	padding-bottom: 0px;
+}
+
+.menu .artbox .box .memimgBx .heart img {
+	width: 30px;
+	object-fit: cover;
+}
+
+.expert .artbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.expert .artbox .box {
+	width: 250px;
+	margin: 15px;
+}
+
+.expert .artbox .box .imgBx {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.expert .artbox .box .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.expert .artbox .box .imgBx .text {
+	padding: 15px 0 5px;
+}
+
+.expert .artbox .box .imgBx .text h3 {
+	font-weight: 400;
+	color: #111;
+}
+
+	.menu .artbox {
+		min-width: 240px;
+		margin-top: 20px;
+	}
+	
+.menu .artbox .box .imgBx .titlePic {
+	position: absolute;
+	left: 0px;
+	/* width: 57%; */
+	height: 100%;
+}
+
+.menu .artbox .box .time {
+	position: absolute;
+	top: 20%;
+	right: 11%;
+	font-size: 6px;
+	color: black;
+}
+
+.menu .artbox .box .artTitle {
+	position: relative;
+	top: 0%;
+	left: 58%;
+	width: 200px;
+	max-width: 500px;
+	font-size: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.menu .artbox .box .artText {
+	position: absolute;
+	top: 35%;
+	left: 58%;
+	max-width: 200px;
+	max-height: 300px;
+	font-size: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	white-space: normal;
+}
+
+.menu .artbox .box .artc {
+	position: absolute;
+	/* top: 0px; */
+	/* right: 43%; */
+	/* color: black; */
+	/* font-size: 15px; */
+	font-size: 15px;
+	background-color: rgba(0,0,0,.8);
+	padding: 4px 6px;
+	border-radius: 3px;
+	margin: 4px;
+	color: #fff;
+	z-index: 1;
+}
+
+.heart  img {
+	width: 30px;
+	object-fit: cover;
+}
+
+.menu .artbox .box .artCount {
+	position: absolute;
+	bottom: 6px;
+	right: 10%;
+	margin-bottom: 10px;
+}
+
+.artCountText {
+	position: relative;
+	/* margin-bottom: -20px; */
+	margin-left: 37%;
+	/* margin-bottom: -20px; */
+	bottom: -4px;
+}
+
+.heart {
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+}
+
+.artCountpic {
+	width: 21px;
+	margin-left: -px;
+	margin-bottom: -7px;
+}
+
+.menu .artbox .box {
+	    min-width: 500px;
+	    height: 250px;
+	    min-height: 250px;
+	    background-color: #fff;
+	    /* box-shadow: 0 5px 10px #c6cac1; */
+	    position: relative;
+	    transition: 0.5s;
+	    margin: 25px;
+	    box-shadow: 0px 5px 15px rgb(0 0 0 / 80%);
+}
+
+.menu .artbox .box:hover {
+	box-shadow: 10px 15px 35px rgb(0 0 0 / 50%);
+/* 	border: 2px solid #6a9e20;	 */
+}
+
+
+div#artMsgText {
+	margin-top: 14px;
+	margin-left: -30px;
+}
+
+div#oneArtMsg {
+	position: relative;
+	border-radius: 10px;
+	display: -webkit-box;
+	width: 60%;
+	height: 60px;
+	margin-top: 10px;
+	padding: 10px 15px;
+	background-color: rgb(64 166 223 / 30%);
+}
+
+div#artMsgTime {
+	margin-left: auto;
+}
+
+.viewArtCount {
+	float: right;
+}
+
+div#likeCount {
+	font-size: 20px;
+	margin-right: 32px;
+}
+
+#listCount {
+	position: absolute;
+	bottom: -1120px;
+	left: 0px;
+}
+
+#listCountFa {
+	position: relative;
+}
+
+div#viewOneUpdate {
+	float: right;
+	margin-top: 60px;
+	/* margin-right: -20px; */
+	width: 30px;
+}
+
+h4 {
+	margin-top: 50px
+}
+
+
+
+.select {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 53%;
+}
+.addView {position: relative;margin-top: 180px;width: 65%;min-width: 1000px;margin-left: 17%;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);padding: 15px 15px;background-color: white;margin-bottom: 50px;}
+div#addButton {
+    display: flex;
+    font-size: 30px;
+    margin-left: 42%;
+}
+div#addTop {
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+    min-width: 144px;
+    }
+    div#addCkedit {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+/*--------------------------------------- ViewOneArticle---------------------- */
+div#review-detail {position: relative;height: 1px;margin: 40px 0;background-color: #ffffff;}
+
+div#article-tip-text {
+    text-align: center;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #01200f;
+    font-weight: 700;
+    /* transform: translate(-50%,-50%); */
+    position: relative;
+    margin: auto;
+    margin-bottom: 80px;
+}
+div#viewOneTime {
+    color: #95989a;
+}
+div#viewHeart {
+	position: absolute;
+	top: 80px;
+	right: 24px;
+	font-size: 20px;
+}
+
+div #oneArtMsg .imgm {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-top: -5px;
+	border: 1px solid lightgreen;
+}
+
+div#artMsgName {
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+div#artmemName {
+    font-size: 17px;
+    /* display: flex; */
+    position: absolute;
+    bottom: 11%;
+    right: 30%;
+    color: #6f7b8a;
+}
+div#listError {
+    /* text-align: center; */
+    position: absolute;
+    margin-left: 58%;
+    margin-top: 9%;
+}
+div#pageCount {position: relative;top: 174%;right: -33%;font-size: 21px;width: 600px;}
+div#pageChange {
+    position: relative;
+    right: -33%;
+    max-width: 600px;
+    /* bottom: 70px; */
+    margin: 50px;
+    text-align: center;
+}
+div#pageChangeSelect {
+    position: relative;
+    /* right: -19%; */
+}
+div#artback table {
+    table-layout: fixed;
+    word-break:break-all;
+    
+}
+div#artcquick {
+
+width: 44%;
+
+margin-top: 30px;
+
+margin-left: 8%;
+
+position: absolute;
+
+font-size: 165%;
+
+display: flex;
+
+box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+}
+div#artcquick1 {
+    min-width: 7%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+div#artcquick2 {
+    min-width: 7%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+div#artcquick3 {
+    min-width: 7%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+div#artcquick4 {
+    min-width: 7%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+div#artcquick5 {
+    min-width: 7%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+/* ------------Msg--------- */
+div#moreMsg {
+    border-radius: 10px;
+    display: -webkit-box;
+    width: 60%;
+    height: 51px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: rgb(141 141 140 / 30%);
+}
+input#moreMsgBtn {
+   margin-top: 1%;
+    margin-left: 10%;
+    background-color: rgb(214 214 214 / 8%);
+    border: none;
+    font-size: 20px;
+    color: #7b7be6;
+}
+/* ------------add --------- */
+div#myArtpreview img {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+div#myArtpreview {
+    overflow: hidden;
+    width: 370px;
+    /* border: 2px solid red; */
+    height: 270px;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+}
+
+b, strong {
+    /* width: 100px; */
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.a {
+    color: #fff;
+    text-decoration: none;
+}
+
+input.submit:hover {
+	transition: 0.5s;
+	    background-color: #ff0157;
+	
+	
+}
+.selectTitle {
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 180%;
+    display: flex;
+    /* box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%); */
+}
+
+.menu .artbox {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+/* ------------------chat--------------------- */
+div#artChatRoom {
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    width: 420px;
+    height: 600px;
+    font: 15px verdana, Times New Roman, arial, helvetica, sans-serif, Microsoft JhengHei;
+}
+.panel {
+	    display: flex;
+	    border: 1px solid #8ac88c;
+	    border-radius: 5px;
+	    width: 85%;
+	    margin-bottom: 0px;
+   	 	background-color: #eee;
+}
+
+.message-area {
+	height: 70%;
+	resize: none;
+	box-sizing: border-box;
+	overflow: auto;
+	background-image: url(https://lh3.googleusercontent.com/proxy/VAgNh0qjzZoVWp5o54vG-kMTK1Z1XAeBFqdgVs6B3SYtHaWrn9RPgaGrz4uGsvX_eIFxV2oWeXcZeUnxv5PnwFu_dn4mY9oRFB5etrm_fYr2vVsnqjx75zJDj0nCkDdZ9iGfjSDRmDBTjZ3upw);
+	background-color: #e5e5e5;
+	font-size: 30px;
+}
+div#artChatMsg {
+    border: 1px solid #D0D3D4;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+}
+div#artChatMsg #artMessage {    
+	margin-bottom: 5px;
+    margin-top: 5px;
+    border: none;
+    background-color: #eeeeee;
+    height: 36px;
+    width: inherit;
+    outline: none;
+ }
+
