@@ -211,7 +211,7 @@ div .jumbotron{
 				<div class="ArtTime"></div>
 					文章發表時間:${string3}
 						<div id="artMemPic">
-					<img class='imgm' src='<%=request.getContextPath()%>/AllPic.do?table=member_list&amp;picColumn=mem_pic&amp;idColumn=mem_id&amp;id='${articleVO.memId}>
+					<img class='imgm' src='<%=request.getContextPath()%>/AllPic.do?table=member_list&amp;picColumn=mem_pic&amp;idColumn=mem_id&amp;id=${articleVO.memId}'>
 				</div>
 				<div id="artmemName">
 					${memberSvc.getOneMem(articleVO.memId).memName}
