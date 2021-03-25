@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<!--這句的意思就是制定所有頁面都經過裝飾器decorator裝飾 -->
+	<mapping path="/*" decorator="/front-end/views/decorator.jsp" />
+
+<!-- 	<mapping path="/front_end/member/*" decorator="/front_end/views/member_decorator.jsp" /> -->
+
+	<mapping path="/front-end/member/*">
+		<decorator>/front-end/views/member_decorator.jsp</decorator>
+		<decorator>/front-end/views/decorator.jsp</decorator>
+
+	</mapping>
+	
+	<mapping path="/back-end/*">
+	
+		<decorator>/resource/dashboard/template.jsp</decorator>
+
+	</mapping>
+	<!-- 這句的意思是/druid/下的所有子頁面都不經過裝飾器頁面裝飾 -->
+<!-- 	<mapping path="/druid/*" exclude="true" /> -->
+	<!-- 這句的意思跟上面那行差不多，但是這裡有 exclude 和exclue的區別，其實兩個都是可以的，不知道是不是開發的程式設計師打錯了呢，還是博主英語太差 -->
+<!-- 	<mapping path="/manager/*" exclue="true" /> -->
+</sitemesh>

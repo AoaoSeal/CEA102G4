@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>CEA102G4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/tibamountain</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+<!--     <servlet> -->
+<!-- 	  <servlet-name>GetTimeStart</servlet-name> -->
+<!-- 	  <servlet-class>com.all.GetTimeStart</servlet-class> -->
+<!-- 	  <load-on-startup>10</load-on-startup> -->
+<!-- 	</servlet> -->
+	
+<!-- 	    <servlet> -->
+<!-- 	  <servlet-name>websocket</servlet-name> -->
+<!-- 	  <servlet-class>com.websocket.websocket</servlet-class> -->
+<!--  	  <load-on-startup>10</load-on-startup> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 	  <servlet-name>websocket</servlet-name> -->
+<!-- 	  <url-pattern>/websocket</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+   <servlet>
+	  <servlet-name>DBUtil</servlet-name>
+	  <servlet-class>com.websocket.DBUtil</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>DBUtil</servlet-name>
+	  <url-pattern>/DBUtil</url-pattern>
+	</servlet-mapping>
+  
+  
+   <!--  ==================== 以下是文良的佈署 -->  
+    	 <servlet>
+    <servlet-name>ArticleServlet</servlet-name>
+    <servlet-class>com.art.controller.ArticleServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ArticleServlet</servlet-name>
+    <url-pattern>/art/art.do</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ArticleServlet</servlet-name>
+    <url-pattern>/front-end/art/art.do</url-pattern>
+  </servlet-mapping> 
+  
+  
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>ArtcServlet</servlet-name>
+    <servlet-class>com.artc.controller.ArtcServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ArtcServlet</servlet-name>
+    <url-pattern>/artc/artc.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>ArtcServlet</servlet-name>
+    <url-pattern>/front-end/artc/artc.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ArtCountServlet</servlet-name>
+    <servlet-class>com.artcount.controller.ArtCountServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ArtCountServlet</servlet-name>
+    <url-pattern>/art/artcount.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>ArtCountServlet</servlet-name>
+    <url-pattern>/front-end/art/artcount.do</url-pattern>
+    
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>ArticlePic</servlet-name>
+    <servlet-class>com.art.controller.ArticlePic</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ArticlePic</servlet-name>
+    <url-pattern>/art/artpic.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>ArticlePic</servlet-name>
+    <url-pattern>/front-end/art/artpic.do</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>ArticleBack</servlet-name>
+    <servlet-class>com.art.controller.ArticleBack</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ArticleBack</servlet-name>
+    <url-pattern>/back-end/art/ArticleBack</url-pattern>
+      <url-pattern>/front-end/art/Article</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+ <!--   以下是睿禾的部屬 -->
+ <servlet>
+     <servlet-name>GoodsServlet</servlet-name>
+    <servlet-class>com.goods.controller.GoodsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/goods/goods.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/front-end/goods/goods.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrServlet</servlet-name>
+    <servlet-class>com.or.controller.OrServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrServlet</servlet-name>
+    <url-pattern>/or/or.do</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>OrServlet</servlet-name>
+    <url-pattern>/front-end/or/or.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TraServlet</servlet-name>
+    <servlet-class>com.tra.controller.TraServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TraServlet</servlet-name>
+    <url-pattern>/tra/tra.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TraServlet</servlet-name>
+    <url-pattern>/front-end/tra/tra.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TraServlet</servlet-name>
+    <url-pattern>/back-end/tra/tra.do</url-pattern>
+  </servlet-mapping>
+  
+    <!--   以下是的部屬 -->
+  
+  
+  <servlet>
+    <servlet-name>SrepServlet</servlet-name>
+    <servlet-class>com.srep.controller.SrepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SrepServlet</servlet-name>
+    <url-pattern>/front-end/srep/srep.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SrepServlet</servlet-name>
+    <url-pattern>/back-end/srep/srep.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GrepServlet</servlet-name>
+    <servlet-class>com.grep.controller.GrepServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GrepServlet</servlet-name>
+    <url-pattern>/front-end/grep/grep.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GrepServlet</servlet-name>
+    <url-pattern>/back-end/grep/grep.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+<!--  ==================== 以下是曉雰的佈署 -->  
+  <servlet>
+	  <servlet-name>LdServlet</servlet-name>
+	  <servlet-class>com.leader.controller.LdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>LdServlet</servlet-name>
+	  <url-pattern>/leader/ld.do</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>LdServlet</servlet-name>
+	  <url-pattern>/front-end/leader/ld.do</url-pattern>
+	</servlet-mapping>
+	  <servlet-mapping>
+	  <servlet-name>LdServlet</servlet-name>
+	  <url-pattern>/back-end/leader/ld.do</url-pattern>
+	</servlet-mapping>
+  
+	<servlet>
+	  <servlet-name>LdPicServlet</servlet-name>
+	  <servlet-class>com.leader.controller.LdPicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>LdPicServlet</servlet-name>
+	  <url-pattern>/leader/ldPic.do</url-pattern>
+	</servlet-mapping>
+  	<servlet-mapping>
+	  <servlet-name>LdPicServlet</servlet-name>
+	  <url-pattern>/front-end/ldPic.do</url-pattern>
+	</servlet-mapping>
+	  	<servlet-mapping>
+	  <servlet-name>LdPicServlet</servlet-name>
+	  <url-pattern>/back-end/ldPic.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>ItcServlet</servlet-name>
+	  <servlet-class>com.itinerary_category.controller.ItcServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ItcServlet</servlet-name>
+	  <url-pattern>/itinerary_category/itc.do</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>ItcServlet</servlet-name>
+	  <url-pattern>/front-end/itinerary_category/itc.do</url-pattern>
+	</servlet-mapping>
+	  <servlet-mapping>
+	  <servlet-name>ItcServlet</servlet-name>
+	  <url-pattern>/back-end/itinerary_category/itc.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>ItServlet</servlet-name>
+	  <servlet-class>com.itinerary.controller.ItServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ItServlet</servlet-name>
+	  <url-pattern>/itinerary/it.do</url-pattern>
+	</servlet-mapping>
+  	<servlet-mapping>
+	  <servlet-name>ItServlet</servlet-name>
+	  <url-pattern>/front-end/itinerary/it.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>ItServlet</servlet-name>
+	  <url-pattern>/back-end/itinerary/it.do</url-pattern>
+	</servlet-mapping>
+  
+	<servlet>
+	  <servlet-name>ItPicServlet</servlet-name>
+	  <servlet-class>com.itinerary.controller.ItPicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ItPicServlet</servlet-name>
+	  <url-pattern>/itinerary/itPic.do</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>ItPicServlet</servlet-name>
+	  <url-pattern>/front-end/itinerary/itPic.do</url-pattern>
+	</servlet-mapping>
+	  <servlet-mapping>
+	  <servlet-name>ItPicServlet</servlet-name>
+	  <url-pattern>/back-end/itinerary/itPic.do</url-pattern>
+	</servlet-mapping>
+  
+	<servlet>
+	  <servlet-name>PicServlet</servlet-name>
+	  <servlet-class>com.itinerary.controller.PicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>PicServlet</servlet-name>
+	  <url-pattern>/itinerary/pic.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>PicServlet</servlet-name>
+	  <url-pattern>/front-end/itinerary/pic.do</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+	  <servlet-name>PicServlet</servlet-name>
+	  <url-pattern>/back-end/itinerary/pic.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>RmServlet</servlet-name>
+	  <servlet-class>com.registration_master.controller.RmServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>RmServlet</servlet-name>
+	  <url-pattern>/registration_master/rm.do</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+	  <servlet-name>RmServlet</servlet-name>
+	  <url-pattern>/front-end/registration_master/rm.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>RmServlet</servlet-name>
+	  <url-pattern>/back-end/registration_master/rm.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	  <servlet-name>RdServlet</servlet-name>
+	  <servlet-class>com.registration_master.controller.RdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>RdServlet</servlet-name>
+	  <url-pattern>/registration_master/rd.do</url-pattern>
+	</servlet-mapping>	 
+  	<servlet-mapping>
+	  <servlet-name>RdServlet</servlet-name>
+	  <url-pattern>/front-end/registration_master/rd.do</url-pattern>
+	</servlet-mapping>	
+	 <servlet-mapping>
+	  <servlet-name>RdServlet</servlet-name>
+	  <url-pattern>/back-end/registration_master/rd.do</url-pattern>
+	</servlet-mapping>	
+  
+  
+  	<servlet>
+	  <servlet-name>EmpServlet</servlet-name>
+	  <servlet-class>com.emp.controller.EmpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>EmpServlet</servlet-name>
+	  <url-pattern>/emp/emp.do</url-pattern>
+	</servlet-mapping>	 
+
+  
+  
+  
+  
+<!--  ==================== 以下是奕愷的佈署 -->
+  <servlet>
+    <servlet-name>BidServlet</servlet-name>
+    <servlet-class>com.bid.controller.BidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BidServlet</servlet-name>
+    <url-pattern>/bid/bid.do</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BidServlet</servlet-name>
+    <url-pattern>/back-end/bid/bid.do</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BidServlet</servlet-name>
+    <url-pattern>/front-end/bid/bid.do</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>com.member.controller.MemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/member/mem.do</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/front-end/member/mem.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/front-end/mem.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/back-end/member/mem.do</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/back-end/mem.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>AllPic</servlet-name>
+    <servlet-class>com.all.AllPic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllPic</servlet-name>
+    <url-pattern>/AllPic.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ConfirmBal</servlet-name>
+    <servlet-class>com.all.ConfirmBal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmBal</servlet-name>
+    <url-pattern>/front-end/ConfirmBal.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmBal</servlet-name>
+    <url-pattern>/ConfirmBal.do</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>GetFirstPrice</servlet-name>
+    <servlet-class>com.all.GetFirstPrice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetFirstPrice</servlet-name>
+    <url-pattern>/front-end/GetFirstPrice.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFirstPrice</servlet-name>
+    <url-pattern>/GetFirstPrice.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+        <servlet>
+    <servlet-name>OpenBid</servlet-name>
+    <servlet-class>com.all.OpenBid</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OpenBid</servlet-name>
+    <url-pattern>/front-end/OpenBid.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OpenBid</servlet-name>
+    <url-pattern>/OpenBid.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>Follow</servlet-name>
+    <servlet-class>com.all.Follow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Follow</servlet-name>
+    <url-pattern>/front-end/Follow.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Follow</servlet-name>
+    <url-pattern>/Follow.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>SearchFollow</servlet-name>
+    <servlet-class>com.all.SearchFollow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchFollow</servlet-name>
+    <url-pattern>/front-end/SearchFollow.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchFollow</servlet-name>
+    <url-pattern>/SearchFollow.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FollowCount</servlet-name>
+    <servlet-class>com.all.FollowCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FollowCount</servlet-name>
+    <url-pattern>/front-end/FollowCount.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FollowCount</servlet-name>
+    <url-pattern>/FollowCount.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchFollowByMemberID</servlet-name>
+    <servlet-class>com.all.SearchFollowByMemberID</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchFollowByMemberID</servlet-name>
+    <url-pattern>/front-end/SearchFollowByMemberID.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchFollowByMemberID</servlet-name>
+    <url-pattern>/SearchFollowByMemberID.do</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>sitemesh</filter-name>
+    <filter-class>org.sitemesh.config.ConfigurableSiteMeshFilter</filter-class>
+  </filter>
+ 
+<!--   <filter-mapping> -->
+<!--     <filter-name>sitemesh</filter-name> -->
+<!--     <url-pattern>/*</url-pattern> -->
+<!--   </filter-mapping> -->
+  
+   <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/front-end/*</url-pattern>
+     <url-pattern>/art/art.do</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/back-end/*</url-pattern>
+  </filter-mapping>
+<!--   <filter> -->
+<!--       <filter-name>freemarkerFilter</filter-name> -->
+<!--       <filter-class>org.adaikiss.kay.web.FreemarkerFilter</filter-class> -->
+<!--   </filter> -->
+<!--   <filter-mapping> -->
+<!--       <filter-name>freemarkerFilter</filter-name> -->
+<!--       <url-pattern>*.ftl</url-pattern> -->
+<!--       <dispatcher>REQUEST</dispatcher> -->
+<!--     <dispatcher>FORWARD</dispatcher> -->
+<!--   </filter-mapping> -->
+</web-app>
