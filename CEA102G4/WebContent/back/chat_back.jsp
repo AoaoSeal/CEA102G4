@@ -21,7 +21,7 @@
 	
 	.friend-drawer{
 	  position: relative;
-	}
+	} 
 		
 	
 	.dataCount::after{
